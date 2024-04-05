@@ -43,7 +43,7 @@ def hbnb():
 
     cache_id = generate_cache_id()
 
-    return render_template('1-hbnb.html',
+    return render_template('2-hbnb.html',
                            states=st_ct,
                            amenities=amenities,
                            places=places,
