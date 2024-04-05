@@ -21,17 +21,34 @@
 	  <h4>&nbsp;</h4>
 	  <div class="popover">
 	    <ul>
-	      {% for state in states %}
 	      <li>
-		<h2>{{ state[0].name }}:</h2>
+		<h2>Kenya</h2>
 		<ul>
-		  {% for city in state[1] %}
-		  <li>{{ city.name }}</li>
-		  {% endfor %}
+		  Nairobi
+		  <li>Karen</li>
+		  <li>Kileleshwa</li>
+		  <li>Langata</li>
+		</ul>
+		<ul>
+			Mombasa
+			<li>Diani</li>
+			<li>Nyali</li>
 		</ul>
 	      </li>
-	      {% endfor %}
 	    </ul>
+		<h2>Tanzania</h2>
+		<ul>
+			Dar es Salaam
+		</ul>
+		<ul>
+			Dodoma
+		</ul>
+		<ul>
+			Mwanza
+		</ul>
+		<ul>
+			Tanga
+		</ul>
 	  </div>
 	</div>
 	<div class="amenities">
@@ -39,9 +56,15 @@
 	  <h4>&nbsp;</h4>
 	  <div class="popover">
 	    <ul>
-	      {% for amenity in amenities %}
-	      <li>{{ amenity.name }}</li>
-	      {% endfor %}
+	      <li>24-hour check-in</li>
+		  <li>Air conditioning</li>
+		  <li>Breakfast</li>
+		  <li>Buzzer/wireless intercom</li>
+		  <li>Cable TV</li>
+		  <li>Carbon monoxide</li>
+		  <li>Cat(s)</li>
+		  <li>Dog(s)</li>
+		  <li>Doorman</li>
 	    </ul>
 	  </div>
 	</div>
@@ -50,25 +73,23 @@
       <div class="placesh1"><h1>Places</h1></div>
       <section class="places">
 	<!-- <h1>Places</h1> -->
-	{% for place in places %}
 	<article>
 	  <div class="title_box">
-	    <h2>{{ place.name }}</h2>
-	    <div class="price_by_night">${{ place.price_by_night }}</div>
+	    <h2>Karen</h2>
+	    <div class="price_by_night">$110</div>
 	  </div>
 	  <div class="information">
-	    <div class="max_guest">{{ place.max_guest }} Guest{% if place.max_guest != 1 %}s{% endif %}</div>
-            <div class="number_rooms">{{ place.number_rooms }} Bedroom{% if place.number_rooms != 1 %}s{% endif %}</div>
-            <div class="number_bathrooms">{{ place.number_bathrooms }} Bathroom{% if place.number_bathrooms != 1 %}s{% endif %}</div>
+	    <div class="max_guest">2 Guest</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">2 Bathroom</div>
 	  </div>
 	  <div class="user">
-            <b>Owner:</b> {{ place.user.first_name }} {{ place.user.last_name }}
+            <b>Owner:</b> James Goodwin
           </div>
           <div class="description">
-	    {{ place.description | safe }}
+			This posh Airbnb retreat offers a tranquil escape in a serene, safe neighborhood. Featuring one bedroom and two bathrooms, it boasts modern furnishings, plush bedding, and upscale amenities. Nestled away from the city, guests can enjoy relaxation on a private patio, surrounded by lush greenery and panoramic views.
           </div>
 	</article>
-	{% endfor %}
       </section>
     </div>
     <footer>
