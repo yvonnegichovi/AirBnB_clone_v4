@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js?{{ cache_id }}"></script>
     <script src="../static/scripts/2-hbnb.js?{{ cache_id }}"></script>
     <link rel="stylesheet" type="text/css" href="../static/styles/4-common.css?{{ cache_id }}">
     <link rel="stylesheet" type="text/css" href="../static/styles/3-header.css?{{ cache_id }}">
@@ -14,68 +14,68 @@
   </head>
   <body>
     <header>
-		<div class="logo"></div>
-		<div id="api_status" class="available"></div>
-	</header>
-	<div class="container">
-		<section class="filters">
-			<div class="locations">
-				<h3>States</h3>
-				<h4>&nbsp;</h4>
-				<div class="popover">
-					<ul>
-						<li>
-							<h2>Kenya</h2>
-							<ul>
-								Nairobi
-								<li>Karen</li>
-								<li>Kileleshwa</li>
-								<li>Langata</li>
-							</ul>
-							<ul>
-								Mombasa
-								<li>Diani</li>
-								<li>Nyali</li>
-							</ul>
-						</li>
-					</ul>
-					<h2>Tanzania</h2>
-					<ul>
-						Dar es Salaam
-					</ul>
-					<ul>
-						Dodoma
-					</ul>
-					<ul>
-						Mwanza
-					</ul>
-					<ul>
-						Tanga
-					</ul>
-				</div>
-			</div>
-			<div class="amenities">
-				<h3>Amenities</h3>
-				<h4>&nbsp;</h4>
-				<div class="popover">
-					<ul>
-						<li>
-							<input type="checkbox" data-id=":amenity_id" data-name=":amenity_name">
-							24-hour check-in</li>
-							<li>
-								<input type="checkbox" data-id=":amenity_id" data-name=":amenity_name">
-								Air conditioning</li>
-								<li>
-									<input type="checkbox" data-id=":amenity_id" data-name=":amenity_name">
-									Breakfast</li>
-									<li>
-										<input type="checkbox" data-id=":amenity_id" data-name=":amenity_name">
-										Buzzer/wireless intercom</li>
-										<li>
-											<input type="checkbox" data-id=":amenity_id" data-name=":amenity_name">
-											Cable TV
-										</li>
-										<li><input type="checkbox" data-id=":amenity_id" data-name=":amenity_name">
+      <div class="logo"></div>
+      <div id="api_status" class="available"></div>
+    </header>
+    <div class="container">
+      <section class="filters">
+	<div class="locations">
+	  <h3>States</h3>
+	  <h4>&nbsp;</h4>
+	  <div class="popover">
+		<ul>
+		  <li>
+		<h2>Kenya</h2>
+		<ul>
+		  Nairobi
+		  <li>Karen</li>
+		  <li>Kileleshwa</li>
+		  <li>Langata</li>
+		</ul>
+		<ul>
+			Mombasa
+			<li>Diani</li>
+			<li>Nyali</li>
+		</ul>
+		  </li>
+		</ul>
+		<h2>Tanzania</h2>
+		<ul>
+			Dar es Salaam
+		</ul>
+		<ul>
+			Dodoma
+		</ul>
+		<ul>
+			Mwanza
+		</ul>
+		<ul>
+			Tanga
+		</ul>
+		</div>
+	</div>
+	<div class="amenities">
+	  <h3>Amenities</h3>
+	  <h4>&nbsp;</h4>
+	  <div class="popover">
+	    <ul>
+	      <li>
+			<input type="checkbox" data-id=":amenity_id" data-name=":amenity_name">
+			24-hour check-in</li>
+		<li>
+			<input type="checkbox" data-id=":amenity_id" data-name=":amenity_name">
+			Air conditioning</li>
+		<li>
+			<input type="checkbox" data-id=":amenity_id" data-name=":amenity_name">
+			Breakfast</li>
+		<li>
+			<input type="checkbox" data-id=":amenity_id" data-name=":amenity_name">
+			Buzzer/wireless intercom</li>
+		<li>
+			<input type="checkbox" data-id=":amenity_id" data-name=":amenity_name">
+			Cable TV</li>
+		<li>
+			<input type="checkbox" data-id=":amenity_id" data-name=":amenity_name">
 			Carbon monoxide detector</li>
 		<li>
 			<input type="checkbox" data-id=":amenity_id" data-name=":amenity_name">
@@ -93,28 +93,28 @@
       </section>
       <div class="placesh1"><h1>Places</h1></div>
       <section class="places">
-	<!-- <h1>Places</h1> -->
-	<article>
-		<div class="title_box">
-		  <h2>Karen</h2>
-		  <div class="price_by_night">$110</div>
-		</div>
-		<div class="information">
-		  <div class="max_guest">2 Guest</div>
-			  <div class="number_rooms">1 Bedroom</div>
-			  <div class="number_bathrooms">2 Bathroom</div>
-		</div>
-		<div class="user">
-			  <b>Owner:</b> James Goodwin
+		<!-- <h1>Places</h1> -->
+		<article>
+			<div class="title_box">
+			  <h2>Karen</h2>
+			  <div class="price_by_night">$110</div>
 			</div>
-			<div class="description">
-			  This posh Airbnb retreat offers a tranquil escape in a serene, safe neighborhood. Featuring one bedroom and two bathrooms, it boasts modern furnishings, plush bedding, and upscale amenities. Nestled away from the city, guests can enjoy relaxation on a private patio, surrounded by lush greenery and panoramic views.
+			<div class="information">
+			  <div class="max_guest">2 Guest</div>
+				  <div class="number_rooms">1 Bedroom</div>
+				  <div class="number_bathrooms">2 Bathroom</div>
 			</div>
-	  </article>
-		</section>
-	  </div>
-	  <footer>
-		<p>Holberton School</p>
-	  </footer>
+			<div class="user">
+				  <b>Owner:</b> James Goodwin
+				</div>
+				<div class="description">
+				  This posh Airbnb retreat offers a tranquil escape in a serene, safe neighborhood. Featuring one bedroom and two bathrooms, it boasts modern furnishings, plush bedding, and upscale amenities. Nestled away from the city, guests can enjoy relaxation on a private patio, surrounded by lush greenery and panoramic views.
+				</div>
+		  </article>
+			</section>
+		  </div>
+		  <footer>
+			<p>Holberton School</p>
+		  </footer>
 	</body>
 </html>
