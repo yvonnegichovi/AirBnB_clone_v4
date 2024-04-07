@@ -6,7 +6,7 @@ $(() => {
     });
     $('.amenities h4').text(checkedAmenities.join(', '));
   });
-  $.get({
+  $.ajax({
     url: 'http://0.0.0.0:5001/api/v1/status/',
     success: function (data) {
       if (data.status == 'OK') {
