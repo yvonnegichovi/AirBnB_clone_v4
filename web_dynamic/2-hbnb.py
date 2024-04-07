@@ -8,7 +8,7 @@ from models.place import Place
 from os import environ
 from flask import Flask, render_template
 import uuid
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates/')
 
 
 def generate_cache_id():
